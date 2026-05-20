@@ -7,4 +7,7 @@ class AppColor {
   static const Color netralColor = Color(0xFF131313);
   static const Color backgroundColor = Color(0xFF131313);
   static const Color backgroundCardColor = Color(0xFF1C1B1B);
+
+  // HEADLINE COLOR
+  static const Color headlineBackgroundColor = Color(0Xffe9bcb6);
 }

@@ -7,6 +7,12 @@ class AppTextTheme {
         fontSize: 32,
         fontWeight: FontWeight.bold,
         fontFamily: 'epilogue',
+        letterSpacing: 12,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 5,
       ),
     );
   }
