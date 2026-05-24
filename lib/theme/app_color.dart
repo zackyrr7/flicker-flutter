@@ -10,4 +10,5 @@ class AppColor {
 
   // HEADLINE COLOR
   static const Color headlineBackgroundColor = Color(0Xffe9bcb6);
+  static const Color textWhiteColor = Color(0xFFFFFFFF);
 }

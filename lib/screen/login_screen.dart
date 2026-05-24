@@ -1,5 +1,6 @@
 import 'package:flicker/helper/responsive_space_extension.dart';
 import 'package:flicker/theme/app_color.dart';
+import 'package:flicker/widget/textfield_custom.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -28,6 +29,13 @@ class LoginScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   color: AppColor.headlineBackgroundColor,
                 ),
+              ),
+
+              CustomTextField(
+                labelText: 'Email',
+                hintText: 'Masukkan email kamu',
+                controller: TextEditingController(),
+                prefixIcon: Icons.email,
               ),
               // SizedBox(height: Media,)
             ],
