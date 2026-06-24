@@ -1,4 +1,4 @@
-import 'package:flicker/theme/app_text_theme.dart';
+import 'package:flicker/core/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {

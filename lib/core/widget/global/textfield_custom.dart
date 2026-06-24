@@ -1,4 +1,4 @@
-import 'package:flicker/theme/app_color.dart';
+import 'package:flicker/core/theme/app_color.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -22,7 +22,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0 ),
+      padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -37,9 +37,14 @@ class CustomTextField extends StatelessWidget {
           const SizedBox(height: 8),
           TextFormField(
             controller: controller,
+            obscureText: obscureText,
+            style: TextStyle(color: Colors.white),
             decoration: InputDecoration(
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
               filled: true,
+
               fillColor: AppColor.backgroundCardColor,
               hintText: hintText,
               prefixIcon: prefixIcon != null
