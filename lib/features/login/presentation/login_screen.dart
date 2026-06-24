@@ -1,7 +1,9 @@
 import 'package:flicker/core/helper/responsive_space_extension.dart';
+import 'package:flicker/core/routes/app_routes.dart';
 import 'package:flicker/core/theme/app_color.dart';
 import 'package:flicker/core/widget/global/textfield_custom.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -53,22 +55,27 @@ class LoginScreen extends StatelessWidget {
                     ),
 
                     // SizedBox(height: Media,)
-                    Container(
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: AppColor.primaryColor,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Text(
-                            'Login',
-                            style: Theme.of(context).textTheme.titleLarge
-                                ?.copyWith(
-                                  color: AppColor.textWhiteColor,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                    GestureDetector(
+                      onTap: () {
+                        context.go(AppRoutes.dashboard);
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: AppColor.primaryColor,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Text(
+                              'Login',
+                              style: Theme.of(context).textTheme.titleLarge
+                                  ?.copyWith(
+                                    color: AppColor.textWhiteColor,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                            ),
                           ),
                         ),
                       ),

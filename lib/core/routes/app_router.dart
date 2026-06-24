@@ -1,5 +1,5 @@
-import 'package:flicker/core/features/login/presentation/login_screen.dart';
 import 'package:flicker/features/home/presentation/dashboard_screen.dart';
+import 'package:flicker/features/login/presentation/login_screen.dart';
 import 'package:flicker/features/main_wrapper/presentation/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'app_routes.dart';

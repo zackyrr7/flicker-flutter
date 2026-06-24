@@ -1,3 +1,4 @@
+import 'package:flicker/core/theme/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,10 +10,13 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Body akan diisi oleh HomeScreen, ExploreScreen, atau ProfileScreen
+      backgroundColor: AppColor.netralColor,
       body: navigationShell,
 
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: AppColor.netralColor,
+        selectedItemColor: AppColor.primaryColor,
+        unselectedItemColor: AppColor.backgroundTransparant,
         currentIndex: navigationShell.currentIndex,
         onTap: (index) {
           // Pindah tab menggunakan GoRouter
